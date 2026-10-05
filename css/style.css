@@ -52,3 +52,121 @@ a {
     text-decoration: none;
 }
 
+/* Aksesibilitas: Skip Link */
+.skip-link {
+    position: absolute;
+    top: -100px;
+    left: 1.5rem;
+    background-color: var(--primary);
+    color: #fff;
+    padding: 0.75rem 1.25rem;
+    border-radius: var(--radius-md);
+    font-weight: 600;
+    z-index: 9999;
+    transition: top 0.2s ease;
+}
+
+.skip-link:focus {
+    top: 1.5rem;
+}
+
+/* Layout & Utilities */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.section-padding {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.bg-light {
+    background-color: var(--bg-light);
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Section Header Bersama */
+.section-header {
+    max-width: 650px;
+    margin: 0 auto 3.5rem auto;
+}
+
+.section-header__title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: var(--text-main);
+    letter-spacing: -0.02em;
+    margin-bottom: 0.75rem;
+}
+
+.section-header__desc {
+    font-size: 1.05rem;
+    color: var(--text-muted);
+}
+
+/* Badges & Buttons */
+.badge {
+    display: inline-block;
+    background-color: var(--primary-light);
+    color: var(--primary);
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 0.35rem 0.9rem;
+    border-radius: var(--radius-full);
+    margin-bottom: 1.25rem;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.95rem;
+    font-weight: 600;
+    padding: 0.8rem 1.6rem;
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn--primary {
+    background-color: var(--primary);
+    color: #fff;
+    box-shadow: 0 10px 15px -3px rgba(79, 70, 229, 0.3);
+}
+
+.btn--primary:hover {
+    background-color: var(--primary-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 15px 20px -3px rgba(79, 70, 229, 0.4);
+}
+
+.btn--outline {
+    background-color: transparent;
+    color: var(--text-main);
+    border: 1.5px solid var(--border-color);
+}
+
+.btn--outline:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+    background-color: rgba(79, 70, 229, 0.04);
+}
+
+.btn-sm {
+    padding: 0.55rem 1.25rem;
+    font-size: 0.875rem;
+    background-color: var(--primary);
+    color: #fff;
+}
+
+.btn-sm:hover {
+    background-color: var(--primary-hover);
+}
